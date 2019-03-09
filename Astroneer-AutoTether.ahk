@@ -5,7 +5,7 @@
 #SingleInstance, Force
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
-#IfWinActive, ahk_exe Astro-Win64-Shipping.exe
+#IfWinActive, ASTRONEER
 
 Return
 
