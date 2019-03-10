@@ -6,6 +6,7 @@
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 #IfWinActive, ASTRONEER ; Limit the script to work only in Astroneer Window (Steam or Windows version)
+MsgBox, Click once on Middle mouse button to put a tether in your position and hold it to start moving forward in AutoTether Mode.`nScript will only work in the game and won't do anything outside it`nQuit the Script using green tray icon (With white H inside it).
 
 Return
 
