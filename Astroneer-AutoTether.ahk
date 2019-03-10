@@ -2,27 +2,27 @@
 ; Language:       English
 ; Platform:       Win9x/NT
 
-#SingleInstance, Force
+#SingleInstance, Force ; Prevent script to run multiple times.
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
-#IfWinActive, ASTRONEER
+#IfWinActive, ASTRONEER ; Limit the script to work only in Astroneer Window (Steam or Windows version)
 
 Return
 
-~MButton::
+~MButton:: ; Middle-Mouse button Trigger ("~" Symbol means Mbutton original function won't be affected).
 
-SendInput, t
-SendInput, {w down}
-SetTimer, AutoTether, 2900
-keywait, MButton
-SetTimer, AutoTether, off
-SendInput, {w up}
+Send, t ; Spawn a tether right after trigger button (MButton) with "t" key.
+Send, {w down} ; Hold "w" Key Down so player move forward
+SetTimer, AutoTether, 2900 ; Set a periodic timer for "AutoTether" lable.
+keywait, MButton ; Wait for Mbutton to be released.
+SetTimer, AutoTether, off ; Turns the "AutoTether" lable off.
+Send, {w up}
 
-Return
+Return ; Prevent AHK to go any further from here
 
 AutoTether:
-SendInput, {w up}
-SendInput, t
-SendInput, {w down}
+Send, {w up} ; temporary release "w" key in order to prevent game/os from skipping the next Send command.
+Send, t
+Send, {w down}
 
 Return
