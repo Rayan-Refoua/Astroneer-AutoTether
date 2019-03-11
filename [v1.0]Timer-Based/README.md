@@ -1,4 +1,4 @@
-# Astroneer-AutoTether
+# Astroneer-AutoTether v1.0
 A simple small AHK (AutoHotkey) script to spawn tethers automatically.
 
 ## How to Install?
