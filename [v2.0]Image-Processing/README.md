@@ -9,8 +9,8 @@ if you want a ready to go exe, go to step 2...
  
  # Controls
 
-1 (From top row of keyboard): Start the Script 
+"1" key (From top row of keyboard): Start the Script 
 
-2 (From top row of keyboard): Stop the script.
+"2" key (From top row of keyboard): Stop the script.
 
 > **Quit the script from taskbar**
